@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.flixster.MainActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
@@ -81,8 +82,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 imageUrl = movie.getBackdropPath();
             }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
             //With what context are we loading a REMOTE image into WHICH image view container?
+            Glide.with(context).load(imageUrl).into(ivPoster);
+
+            /* Using request options to REQUEST a placeholder (local picture) be used until the
+            image is properly loaded */
+            RequestOptions requestOptions = new RequestOptions().placeholder(R.drawable.placeholder);
+            Glide.with(context)
+                    .load(imageUrl)
+                    .apply(requestOptions)
+                    .into(ivPoster);
         }
     }
 
