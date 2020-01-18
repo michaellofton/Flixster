@@ -6,6 +6,12 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ---
 
 ## Flix Part 1
+Submitted by: **Michael Lofton**
+Time spent: **9** hours spent in total
+
+### Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
 
 ### User Stories
 #### REQUIRED (10pts)
@@ -21,13 +27,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src='walkthrough/part1/PortraitWalkthrough.gif' title='Portrait Walkthrough' width='' alt='Video Walkthrough #1'><br>
 
 ### Notes
 Challenges:
- - It was tricky getting the placeholder to align properly to the image sizes. I used 2 different drawables (one for each orientation) and resized them using [this online tool](https://onlinepngtools.com/resize-png) so they would fit better. I also used glide's fit center method to have it scale (and crop if necessary) to fit the dimensions of the movie posters. Because The portrait placeholder is higher (in pixels) than it should be, it throws off the alignment.
+ - It was tricky getting the placeholder to align properly to the image sizes. I used 2 different drawables (one for each orientation) and resized them using [this online tool](https://onlinepngtools.com/resize-png) so they would fit better. I tried to use glide's fitCenter and centerCrop method to have it scale (and crop if necessary) to fit the dimensions of the movie posters but all combinatinos of using those methods cut or distort the retrieved poster image. In the future, I think I could look into those functions further, or other image processing methods from the Glide library.
  
 Placeholder:
 - The placecholders images I used were from this website: https://www.iconfinder.com/. This work is licensed under a [Creative Commons Attribution 3.0 Unsupported License](http://creativecommons.org/licenses/by/3.0/)
@@ -36,8 +40,3 @@ UI Improvements:
 - Bolded the title of each movie for better element distinction
 - Added padding for each movie (row) for better separation
 - Created primary and secondary colors for more interesting contrast and improved user experience
-
-### Open-source libraries used
-
-- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
