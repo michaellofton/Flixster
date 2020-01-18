@@ -32,8 +32,7 @@ Challenges:
  - It was tricky getting the placeholder to align properly to the image sizes. I used 2 different drawables (one for each orientation) and resized them using [this online tool](https://onlinepngtools.com/resize-png) so they would fit better. I also used glide's fit center method to have it scale (and crop if necessary) to fit the dimensions of the movie posters. Because The portrait placeholder is higher (in pixels) than it should be, it throws off the alignment.
  
 Placeholder:
-- The placecholders I used were from this website: https://www.iconfinder.com/
-This work is licensed under a [Creative Commons Attribution 3.0 Unsupported License](http://creativecommons.org/licenses/by/3.0/)
+- The placecholders images I used were from this website: https://www.iconfinder.com/. This work is licensed under a [Creative Commons Attribution 3.0 Unsupported License](http://creativecommons.org/licenses/by/3.0/)
 
 UI Improvements:
 - Bolded the title of each movie for better element distinction
