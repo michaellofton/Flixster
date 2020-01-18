@@ -29,6 +29,7 @@ Time spent: **9** hours spent in total
 
 ### App Walkthough GIF
 <img src='walkthrough/part1/PortraitWalkthrough.gif' title='Portrait Walkthrough' width='' alt='Video Walkthrough #1'><br>
+<img src='walkthrough/part1/LandscapeWalkthrough.gif' title='Landscape Walkthrough' width='' alt='Video Walkthrough #2'><br>
 
 ### Notes
 Challenges:
