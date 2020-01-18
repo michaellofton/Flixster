@@ -10,10 +10,6 @@ Submitted by: **Michael Lofton**
 
 Time spent: **9** hours spent in total
 
-### Open-source libraries used
-- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
-
 ### User Stories
 #### REQUIRED (10pts)
 - [X] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
@@ -42,3 +38,7 @@ UI Improvements:
 - Bolded the title of each movie for better element distinction
 - Added padding for each movie (row) for better separation
 - Created primary and secondary colors for more interesting contrast and improved user experience
+
+### Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
