@@ -7,13 +7,15 @@
     android:layout_height="wrap_content"
     android:padding="5dp">
 
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
     <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
+        android:layout_centerVertical="true"
+
+        android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -21,11 +23,11 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivPoster"
-        android:textSize="24sp"
         android:textColor="@color/colorMovieText"
+        android:textSize="22sp"
         android:textStyle="bold"
         tools:text="Star Wars: The Rise of Skywalker" />
 
