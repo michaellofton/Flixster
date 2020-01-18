@@ -29,7 +29,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 Challenges:
- - It was tricky getting the placeholder to align properly to the image sizes. I decided to use 2 different drawables (one for each orientation) and to resize them so they would fit better. I also used glide's center crop method to have it scale (and crop if necessary) to fit the dimensions of the movie posters.
+ - It was tricky getting the placeholder to align properly to the image sizes. I used 2 different drawables (one for each orientation) and resized them using [this online tool](https://onlinepngtools.com/resize-png) so they would fit better. I also used glide's fit center method to have it scale (and crop if necessary) to fit the dimensions of the movie posters.
  
 Placeholder:
 - The placecholders I used were from this website: https://www.iconfinder.com/
