@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(int statusCode, Headers headers, String response, Throwable throwable) {
-                Log.d(TAG, "onFailure: Failure. Big Face of sad-dom");
+                Log.d(TAG, "onFailure: Failure. Oh no.");
                 Toast.makeText(MainActivity.this, "Please connect to the internet", Toast.LENGTH_LONG).show();
             }
         });

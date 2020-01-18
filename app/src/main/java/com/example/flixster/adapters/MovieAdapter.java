@@ -80,10 +80,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
                 imageUrl = movie.getPosterPath();
                 requestOptions = requestOptions
-                        .placeholder(R.drawable.placeholder_portrait0);
+                        .placeholder(R.drawable.placeholder_portrait03);
 //                        .override(ivPoster.getLayoutParams().width,
 //                                ivPoster.getLayoutParams().height);
-                        //.transform(new FitCenter());
+//                        .transform(new FitCenter());
             }
             else { //landscape, show backdrop path
                 imageUrl = movie.getBackdropPath();
@@ -91,10 +91,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                         .placeholder(R.drawable.placeholder_land0);
 //                        .override(ivPoster.getLayoutParams().width,
 //                                ivPoster.getLayoutParams().height);
-                        //.transform(new FitCenter());
-                        //.transform(new CenterCrop());
+//                        .transform(new FitCenter());
+//                        .transform(new CenterCrop());
             }
-
 
             //With what context are we loading a REMOTE image into WHICH image view container?
             //Glide.with(context).load(imageUrl).into(ivPoster);
