@@ -36,10 +36,7 @@ public class Movie {
             JSONObject jsonMovie = movieJsonArray.getJSONObject(i);
             Movie movie = new Movie(jsonMovie);
             movies.add(movie);
-            Log.i(TAG, "movie size: " + movies.size());
-            Log.i(TAG, "movie title: " + movie.getTitle());
         }
-
         return movies;
     }
 

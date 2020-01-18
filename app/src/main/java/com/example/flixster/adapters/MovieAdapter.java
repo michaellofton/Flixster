@@ -2,7 +2,6 @@ package com.example.flixster.adapters;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.flixster.MainActivity;
 import com.example.flixster.R;
 import com.example.flixster.models.Movie;
 
@@ -22,6 +20,7 @@ import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
+    private final String TAG = MovieAdapter.class.getSimpleName();
     Context context; //Where view is being inflated from
     List<Movie> movies; //data to inflate views with
 
@@ -69,6 +68,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             ivPoster = itemView.findViewById(R.id.ivPoster);
         }
 
+
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
@@ -79,27 +79,33 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             //if portrait, get poster path(most common, save an extra check)
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
                 imageUrl = movie.getPosterPath();
-                //requestOptions.placeholder(R.drawable.placeholderPortrait);
-                //[!]; //Width = 120
+                requestOptions = requestOptions
+                        .placeholder(R.drawable.placeholder_portrait0);
+//                        .override(ivPoster.getLayoutParams().width,
+//                                ivPoster.getLayoutParams().height);
+                        //.transform(new FitCenter());
             }
             else { //landscape, show backdrop path
                 imageUrl = movie.getBackdropPath();
-                //requestOptions.placeholder(R.drawable.placeholderLand);
-                //[!]; //Width = 350
+                requestOptions = requestOptions
+                        .placeholder(R.drawable.placeholder_land0);
+//                        .override(ivPoster.getLayoutParams().width,
+//                                ivPoster.getLayoutParams().height);
+                        //.transform(new FitCenter());
+                        //.transform(new CenterCrop());
             }
 
+
             //With what context are we loading a REMOTE image into WHICH image view container?
-            Glide.with(context).load(imageUrl).into(ivPoster);
+            //Glide.with(context).load(imageUrl).into(ivPoster);
 
             /* Using request options to REQUEST a placeholder (local picture) be used until the
             image is properly loaded */
-
-//            Glide.with(context)
-//                    .load(imageUrl)
-//                    .apply(requestOptions)
-//                    .into(ivPoster);
+            Glide.with(context)
+                    .load(imageUrl)
+                    .apply(requestOptions)
+                    .into(ivPoster);
         }
     }
-
 
 }
