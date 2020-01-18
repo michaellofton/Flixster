@@ -73,13 +73,19 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
 
+            RequestOptions requestOptions = new RequestOptions();
             String imageUrl;
+
             //if portrait, get poster path(most common, save an extra check)
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
                 imageUrl = movie.getPosterPath();
+                //requestOptions.placeholder(R.drawable.placeholderPortrait);
+                //[!]; //Width = 120
             }
             else { //landscape, show backdrop path
                 imageUrl = movie.getBackdropPath();
+                //requestOptions.placeholder(R.drawable.placeholderLand);
+                //[!]; //Width = 350
             }
 
             //With what context are we loading a REMOTE image into WHICH image view container?
@@ -87,11 +93,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
             /* Using request options to REQUEST a placeholder (local picture) be used until the
             image is properly loaded */
-            RequestOptions requestOptions = new RequestOptions().placeholder(R.drawable.placeholder);
-            Glide.with(context)
-                    .load(imageUrl)
-                    .apply(requestOptions)
-                    .into(ivPoster);
+
+//            Glide.with(context)
+//                    .load(imageUrl)
+//                    .apply(requestOptions)
+//                    .into(ivPoster);
         }
     }
 
