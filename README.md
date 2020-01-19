@@ -24,6 +24,7 @@ Time spent: **9** hours spent in total
 - [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
+![alt-text-1](image1.png "walkthrough/part1/PortraitWalkthrough.gif") ![alt-text-2](walkthrough/part1/LandscapeWalkthrough.gif "title-2")
 <img src='walkthrough/part1/PortraitWalkthrough.gif' title='Portrait Walkthrough' width='' alt='Video Walkthrough #1'>
 <img src='walkthrough/part1/LandscapeWalkthrough.gif' title='Landscape Walkthrough' width='' alt='Video Walkthrough #2'><br>
 
