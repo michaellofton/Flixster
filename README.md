@@ -7,8 +7,8 @@ This app was built into 2 parts outlined below.
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 
 #### APIs used:
-- [The Movie Database API](http://docs.themoviedb.apiary.io/#)
-- [YouTube Data API v3](https://developers.google.com/youtube/v3/getting-started?hl=en_US)
+- [The Movie Database API](http://docs.themoviedb.apiary.io/#) - Used for obtaining a list of movies currently playing in theaters
+- [YouTube Data API v3](https://developers.google.com/youtube/v3/getting-started?hl=en_US) - Used for retrieving YouTube videos (trailers) to be played in app
 
 ## Flix Part 2
 Submitted by: **Michael Lofton**<br>
