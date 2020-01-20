@@ -1,11 +1,14 @@
 # Flix
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).<br>
+Flix is an app that allows users to browse movies that are currently playing from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).<br>
 This app was built into 2 parts outlined below.
 
-### Open-source libraries used
+#### Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 
+#### APIs used:
+- [The Movie Database API](http://docs.themoviedb.apiary.io/#)
+- [YouTube Data API v3](https://developers.google.com/youtube/v3/getting-started?hl=en_US)
 
 ## Flix Part 2
 Submitted by: **Michael Lofton**<br>
