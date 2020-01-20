@@ -1,18 +1,59 @@
 # Flix
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+Flix is an app that allows users to browse movies that are currently playing from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).<br>
+This app was built into 2 parts outlined below.
 
-📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
+#### Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+- [YouTube Android Player](https://developers.google.com/youtube/android/player/downloads/) - Loading and playing YouTube videos
+
+#### APIs used:
+- [The Movie Database API](http://docs.themoviedb.apiary.io/#) - Used for obtaining a list of movies currently playing in theaters
+- [YouTube Data API v3](https://developers.google.com/youtube/v3/getting-started?hl=en_US) - Used for retrieving YouTube videos (trailers) to be played in app
+
+## Flix Part 2
+Submitted by: **Michael Lofton**<br>
+Time spent: **4** hours spent in total
+
+### User Stories
+
+#### REQUIRED (10pts)
+
+- [ ] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [ ] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
+
+#### BONUS
+
+- [ ] Trailers for popular movies are played automatically when the movie is selected (1 point).
+  - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
+  - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
+- [ ] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
+- [ ] Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
+- [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
+
+#### CUSTOM BONUS
+The following additional features are implemented:<br>
+* Structure:
+    - [X] The code's packages are organized by category
+* UI:
+    - [X] The title of the movie is centered in the separate activity<br>
+    - [ ] The separate activity's UI matches the theme of the app and MainActivity<br>
+    
+
+### App Walkthough GIF
+
+Portrait                   |  Landscape
+:-------------------------:|:-------------------------:
+![Portrait](walkthrough/part2/PortraitWalkthrough.gif)  |  ![Landscape](walkthrough/part2/LandscapeWalkthrough.gif))
+
+### Notes
+
+Describe any challenges encountered while building the app.
 
 ---
-
 ## Flix Part 1
 Submitted by: **Michael Lofton**
-
-Time spent: **9** hours spent in total
-
-### Open-source libraries used
-- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
+Time spent: **8** hours spent in total
 
 ### User Stories
 #### REQUIRED (10pts)
@@ -28,8 +69,9 @@ Time spent: **9** hours spent in total
 - [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
-<img src='walkthrough/part1/PortraitWalkthrough.gif' title='Portrait Walkthrough' width='' alt='Video Walkthrough #1'><br>
-<img src='walkthrough/part1/LandscapeWalkthrough.gif' title='Landscape Walkthrough' width='' alt='Video Walkthrough #2'><br>
+Portrait                   |  Landscape
+:-------------------------:|:-------------------------:
+![Portrait](walkthrough/part1/PortraitWalkthrough.gif)  |  ![Landscape](walkthrough/part1/LandscapeWalkthrough.gif))
 
 ### Notes
 Challenges:
