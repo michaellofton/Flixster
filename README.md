@@ -8,7 +8,8 @@ This app was built into 2 parts outlined below.
 
 
 ## Flix Part 2
-Submitted by: **Michael Lofton**
+Submitted by: **Michael Lofton**<br>
+Time spent: **4** hours spent in total
 
 ### User Stories
 
@@ -48,6 +49,7 @@ Describe any challenges encountered while building the app.
 ---
 ## Flix Part 1
 Submitted by: **Michael Lofton**
+Time spent: **8** hours spent in total
 
 ### User Stories
 #### REQUIRED (10pts)
