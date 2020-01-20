@@ -2,11 +2,10 @@
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).<br>
 This app was built into 2 parts outlined below.
 
-## Open-source libraries used
+### Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 
-📝 `NOTE` Paste this template at the top of your existing `README.md` file from part 1 of this assignment. (🚫 Remove this paragraph after after checking off completed user stories)
 
 ## Flix Part 2
 
@@ -44,10 +43,6 @@ Portrait                   |  Landscape
 
 Describe any challenges encountered while building the app.
 
-## Open-source libraries used
-- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
-
 ---
 ## Flix Part 1
 Submitted by: **Michael Lofton**
@@ -83,7 +78,3 @@ UI Improvements:
 - Bolded the title of each movie for better element distinction
 - Added padding for each movie (row) for better separation
 - Created primary and secondary colors for more interesting contrast and improved user experience
-
-### Open-source libraries used
-- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
