@@ -51,6 +51,7 @@ The following additional features are implemented:<br>
 Portrait                   |  Landscape
 :-------------------------:|:-------------------------:
 ![Portrait](walkthrough/part2/PortraitWalkthrough.gif)  |  ![Landscape](walkthrough/part2/LandscapeWalkthrough.gif))
+
 Gifs created with [Licecap](https://www.cockos.com/licecap/)
 
 ### Notes
@@ -79,6 +80,7 @@ Time spent: **8** hours spent in total
 Portrait                   |  Landscape
 :-------------------------:|:-------------------------:
 ![Portrait](walkthrough/part1/PortraitWalkthrough.gif)  |  ![Landscape](walkthrough/part1/LandscapeWalkthrough.gif))
+
 Gifs created with [Licecap](https://www.cockos.com/licecap/)
 
 ### Notes
