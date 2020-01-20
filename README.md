@@ -39,6 +39,7 @@ The following additional features are implemented:<br>
     <img src="icon/flix_icon_launcher.png" alt="App Icon" width="125" height="125"><br>
 * Structure & Best Practices:
     - [X] Followed convention/best practices by organizing the codebase's packages into separate categories 
+    - [X] Followed best practices by creating new color codes in the colors.xml resource file
 * Error Handling:
     - [X] Added a custom toast message used to notify the user if the app fails to load the trailer for a selected film.
 * UI:
