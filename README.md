@@ -5,6 +5,7 @@ This app was built into 2 parts outlined below.
 #### Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+- [YouTube Android Player](https://developers.google.com/youtube/android/player/downloads/) - Loading and playing YouTube videos
 
 #### APIs used:
 - [The Movie Database API](http://docs.themoviedb.apiary.io/#) - Used for obtaining a list of movies currently playing in theaters
