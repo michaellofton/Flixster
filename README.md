@@ -13,14 +13,14 @@ This app was built into 2 parts outlined below.
 
 ## Flix Part 2
 Submitted by: **Michael Lofton**<br>
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ### User Stories
 
 #### REQUIRED (10pts)
 
-- [ ] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
-- [ ] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
+- [X] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [X] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
 
 #### BONUS
 
@@ -33,11 +33,17 @@ Time spent: **4** hours spent in total
 
 #### CUSTOM BONUS
 The following additional features are implemented:<br>
-* Structure:
-    - [X] The code's packages are organized by category
+* Features:
+    - [X] Added "Release Date" for a movie in the detail activity
+* Structure & Best Practices:
+    - [X] Followed convention/best practices by organizing the codebase's packages into separate categories 
+* Error Handling:
+    - [X] Added a custom toast message used to notify the user if the app fails to load the trailer for a selected film.
 * UI:
-    - [X] The title of the movie is centered in the separate activity<br>
-    - [ ] The separate activity's UI matches the theme of the app and MainActivity<br>
+    - [X] Matched the detail activity's UI with the theme of the app<br>
+    - [X] Introduced padding to the detail activity for a selected movie.
+    - [X] Changed the rating system to use 5 stars to be more user friendly.
+    - [X] Added shared element activity transition with the title and movie overview between activities.
     
 
 ### App Walkthough GIF
@@ -45,6 +51,8 @@ The following additional features are implemented:<br>
 Portrait                   |  Landscape
 :-------------------------:|:-------------------------:
 ![Portrait](walkthrough/part2/PortraitWalkthrough.gif)  |  ![Landscape](walkthrough/part2/LandscapeWalkthrough.gif))
+
+Gifs created with [Licecap](https://www.cockos.com/licecap/)
 
 ### Notes
 
@@ -72,6 +80,8 @@ Time spent: **8** hours spent in total
 Portrait                   |  Landscape
 :-------------------------:|:-------------------------:
 ![Portrait](walkthrough/part1/PortraitWalkthrough.gif)  |  ![Landscape](walkthrough/part1/LandscapeWalkthrough.gif))
+
+Gifs created with [Licecap](https://www.cockos.com/licecap/)
 
 ### Notes
 Challenges:
