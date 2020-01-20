@@ -1,15 +1,18 @@
-package com.example.flixster;
+package com.example.flixster.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.flixster.R;
 import com.example.flixster.adapters.MovieAdapter;
 import com.example.flixster.models.Movie;
 
@@ -38,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView rvMovies = findViewById(R.id.rvMovies);
 
         //Create the Adapter
-        final MovieAdapter movieAdapter = new MovieAdapter(this, movies);
+        final MovieAdapter movieAdapter = new MovieAdapter(this,this, movies);
 
         //Set the adapter on the recycler view
         rvMovies.setAdapter(movieAdapter);
