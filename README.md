@@ -8,6 +8,9 @@ This app was built into 2 parts outlined below.
 
 
 ## Flix Part 2
+Submitted by: **Michael Lofton**
+
+Time spent: **?** hours spent in total
 
 ### User Stories
 
@@ -26,12 +29,13 @@ This app was built into 2 parts outlined below.
 - [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
 
 #### CUSTOM BONUS
-The following additional features are implemented:
-    * UI:
-    - [ ] The title of the movie is centered in the separate activity
-    - [ ] The separate activity's UI matches the theme of the app and MainActivity
+The following additional features are implemented:<br>
+* Structure:
+    - [X] The code's packages are organized by category
+* UI:
+    - [X] The title of the movie is centered in the separate activity<br>
+    - [ ] The separate activity's UI matches the theme of the app and MainActivity<br>
     
-
 
 ### App Walkthough GIF
 
