@@ -13,7 +13,7 @@ This app was built into 2 parts outlined below.
 
 ## Flix Part 2
 Submitted by: **Michael Lofton**<br>
-Time spent: **5** hours spent in total
+Time spent: **6** hours spent in total
 
 ### User Stories
 
@@ -35,6 +35,8 @@ Time spent: **5** hours spent in total
 The following additional features are implemented:<br>
 * Features:
     - [X] Added "Release Date" for a movie in the detail activity
+    - [X] Added a custom launcher icon created using [vectr.com](https://vectr.com/) and by following [this YouTube tutorial](https://www.youtube.com/watch?v=Q66P-HZwBnk)<br>
+    <img src="icon/flix_icon_launcher.png" alt="App Icon" width="125" height="125"><br>
 * Structure & Best Practices:
     - [X] Followed convention/best practices by organizing the codebase's packages into separate categories 
 * Error Handling:
@@ -44,7 +46,7 @@ The following additional features are implemented:<br>
     - [X] Introduced padding to the detail activity for a selected movie.
     - [X] Changed the rating system to use 5 stars to be more user friendly.
     - [X] Added shared element activity transition with the title and movie overview between activities.
-    
+    - [X] Increased the visibility of the ratingBar (the stars) by giving it a grey background.
 
 ### App Walkthough GIF
 
